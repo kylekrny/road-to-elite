@@ -3,16 +3,22 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoPersonal from '@/images/logos/personal-logo.svg'
 
 
 const projects = [
   {
+    name: 'Las Vegas Triathlon 2023',
+    location: 'Las Vegas, Nevada',
+    distance: 'Olympic',
+    time: 'TBD',
+    place: 'TBD',
+  },
+  {
     name: 'Boulder Sunset 2023',
     location: 'Boulder, Colorado',
     distance: 'Olympic',
-    time: '2:48:08',
-    place: '526 out of 1775',
+    time: 'TBD',
+    place: 'TBD',
   },
   {
     name: 'Spudman 2023',
@@ -64,19 +70,19 @@ export default function Projects() {
               <p className="text-xs">{project.location}</p>
               <Card.Description>
                 <ul>
-                <li>
-                <p>
-                  <b>Distance:</b> {project.distance}
-                </p>
-                </li>
-                <li>
-                <p>
-                  <b>Time:</b> {project.time}
-                </p>
-                </li>
-                <li>
-                  <p><b>Place:</b> {project.place}</p>
-                </li>
+                  <li>
+                    <p>
+                      <b>Distance:</b> {project.distance}
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <b>Time:</b> {project.time}
+                    </p>
+                  </li>
+                  <li>
+                    <p><b>Place:</b> {project.place}</p>
+                  </li>
                 </ul>
               </Card.Description>
             </Card>
